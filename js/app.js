@@ -39,7 +39,7 @@ Enemy.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 }
 
-Enemy.protoype.getRandomY = function() {
+Enemy.prototype.getRandomY = function() {
     return this.yRange[Math.floor(Math.random() * this.yRange.length)];
 }
 
