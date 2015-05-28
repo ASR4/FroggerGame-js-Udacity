@@ -78,7 +78,7 @@ Player.prototype.checkCollisions = function() {
     else if (this.y >=60 && this.y <= 220) {
         var self = this;
         // player is on road rows, check collison
-        allEnemies.forEach(function(enemy)) {
+        allEnemies.forEach(function(enemy) {
             // is the bug on the same row as the player?
             if (enemy.y == self.y) {
                 // is the bug on the player?
